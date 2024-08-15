@@ -1,5 +1,5 @@
 let userInput = document.getElementById("date");
-userInput.max = new Date().toISOString().split("T")[0];
+userInput.max = new Date().toISOString().split("T")[0]; // no future dates
 userInput.placeholder = "dd-mm-yyyy";
 let result = document.getElementById("result");
 
@@ -47,6 +47,7 @@ function calculateAge() {
     y3--;
   }
 
+  // display Age
   result.innerHTML = `You are <span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days old`;
 }
 
